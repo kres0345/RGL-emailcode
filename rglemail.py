@@ -1,38 +1,38 @@
-import imaplib, smtplib, getpass, os #This imports the libraries needed for this program to work(imaplib is for recieving the emails. os is for deleting text files)
-variable1 = 0 #This sets a variable to "0"
-if os.path.exists("error.txt"): #This checks if a file named "error.txt" exists
-    os.remove("error.txt") #This deletes "error.txt" if it exists
-var1 = raw_input("Please enter your email: ") #Asks for your email
-print "The following text is hidden, but it is still typed." #Print just says a string(a sentence) in the console.
-var2 = getpass.getpass() #Asks for password. (The reason it looks different from the username one. Is becouse this one hides what you type)
+import imaplib, smtplib, getpass, os
+variable1 = 0
+if os.path.exists("error.txt"):
+    os.remove("error.txt")
+var1 = raw_input("Please enter your email: ")
+print "The following text is hidden, but it is still typed."
+var2 = getpass.getpass()
 mserver = imaplib.IMAP4_SSL \
-	('imap.gmail.com',993) #This is the gmail server name.
+	('imap.gmail.com',993)
+	
+mserver.login(var1,var2)
 
-mserver.login(var1,var2) #Logs into email server with the credentials typed on line 5 and 7
-
-stat,cnt = mserver.select('Inbox') #Checks your inbox's first email
+stat,cnt = mserver.select('Inbox')
 
 stat, dta = mserver.fetch \
-            (cnt[0], \
-	    ('(UID BODY[TEXT])') #Specifies what part of email you want
+			(cnt[0], \
+			'(UID BODY[TEXT])')
 
-#below error with print
-print dta[0][1] #Prints the email in the console
-mserver.close()#Closes the connection between the console and email server
-mserver.logout()									#Logs out of server
-text_file = open("Email.txt", "w") #Creates the textfile Email.txt (containing the first email)
-text_file.write(dta[0][1]) #Prints the email into the textfile
-text_file.close() #Closes the function
-if not 'Subject: Sign into Renegade Line' in open('Email.txt').read(): #Checks if the email found is the renegade line email
-    print("false") #Says "false" in the console if it isn't
-    text_file = open("error.txt", "w") #Creates the "error.txt" if it's the wrong email
-    text_file.write("Your first email isn't the email from Raw Vengeance Games containing the code")#Prints the text into "error.txt"
-    text_file.close() #Closes the function
-    variable1 = 1 #Changes the booleon of this variable to "1"
+
+print dta[0][1]
+mserver.close()
+mserver.logout()
+text_file = open("Email.txt", "w")
+text_file.write(dta[0][1])
+text_file.close()
+if not 'Subject: Sign into Renegade Line' in open('Email.txt').read():
+    print("false")
+    text_file = open("error.txt", "w")
+    text_file.write("Your first email isn't the email from Raw Vengeance Games containing the code")
+    text_file.close()
+    variable1 = 1
    
 
-text_file = open("Key.txt", "w") #This feuture isn't done yet, but it is supposed to print the bare onetime key into "Key.txt"
-text_file.write("This feuture isn't done yet") #Prints it into a text file
-text_file.close() #Closes the function
-if variable1 == 1: #Checks if the booleon variable is "1"
-    os.remove("Key.txt") #Removes the file "Key.txt"
+text_file = open("Key.txt", "w")
+text_file.write(var1)
+text_file.close()
+if variable1 == 1:
+    os.remove("Key.txt")
