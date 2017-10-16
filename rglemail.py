@@ -5,15 +5,15 @@ if os.path.exists("error.txt"):							#This checks if a file named "error.txt" e
 var1 = raw_input("Please enter your email: ")			#Asks for your email
 print "The following text is hidden, but it is still typed."	#Print just says a string(a sentence) in the console.
 var2 = getpass.getpass()								#Asks for password. (The reason it looks different from the username one. Is becouse this one hides what you type)
-mserver = imaplib.IMAP4_SSL \							#Part of the email retrieve server
-	('imap.gmail.com',993)								#This is the gmail server name.
+mserver = imaplib.IMAP4_SSL \
+	('imap.gmail.com',993)	#This is the gmail server name.
 
 mserver.login(var1,var2)								#Logs into email server with the credentials typed on line 5 and 7
 
 stat,cnt = mserver.select('Inbox')						#Checks your inbox's first email
 
-stat, dta = mserver.fetch \								#Downloads the email
-			(cnt[0], \
+stat, dta = mserver.fetch \
+(cnt[0], \
 			'(UID BODY[TEXT])')							#Specifies what part of email you want
 
 print dta[0][1]											#Prints the email in the console
