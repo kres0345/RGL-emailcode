@@ -1,4 +1,4 @@
-import imaplib, getpass, os #This imports the libraries needed for this program to work(imaplib is for recieving the emails. os is for deleting text files)
+import imaplib, smtplib, getpass, os #This imports the libraries needed for this program to work(imaplib is for recieving the emails. os is for deleting text files)
 variable1 = 0 #This sets a variable to "0"
 if os.path.exists("error.txt"): #This checks if a file named "error.txt" exists
     os.remove("error.txt") #This deletes "error.txt" if it exists
