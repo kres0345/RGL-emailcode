@@ -19,3 +19,9 @@ You can download the program here: [https://github.com/kres0345/RGL-emailcode/re
 
 If you still think this is malware feel free to check the comments in [rglemail.py](https://github.com/kres0345/RGL-emailcode/blob/master/Commented%20rglemail.txt) (it's the main file)
 the comments explain what the different functions does. You can also just ask me in the issues section.
+
+### When you scan the program with your anti-virus
+- Read the "False positive error" section of the page https://en.wikipedia.org/wiki/False_positives_and_false_negatives#False_positive_error
+- Link to NoDistribute: https://NoDistribute.com/result/Cz3Xd2M9pgTQtn5rmUVKyIOjY
+- Notice: The popular anti-viruses like: AVG, Malwarebytes Anti-Malware, Norton Antivirus, Avast and more. Doesn't detect any viruses.
+- Reason some detect it as a virus is becouse it reads your Emails. Which some viruses tend to do.
