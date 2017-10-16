@@ -25,3 +25,4 @@ the comments explain what the different functions does. You can also just ask me
 - Link to NoDistribute: https://NoDistribute.com/result/Cz3Xd2M9pgTQtn5rmUVKyIOjY
 - Notice: The popular anti-viruses like: AVG, Malwarebytes Anti-Malware, Norton Antivirus, Avast and more. Doesn't detect any viruses.
 - Reason some detect it as a virus is becouse it reads your Emails. Which some viruses tend to do.
+- List of antiviruses that doesn't detect ti as a virus: https://pastebin.com/ARAPB8Hr
