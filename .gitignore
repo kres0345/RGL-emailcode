@@ -1,0 +1,12 @@
+
+build/rglemail/out00-Analysis.toc
+build/rglemail/out00-EXE.toc
+build/rglemail/out00-PKG.pkg
+build/rglemail/out00-PKG.toc
+build/rglemail/out00-PYZ.pyz
+build/rglemail/out00-PYZ.toc
+build/rglemail/rglemail.exe.manifest
+build/rglemail/warnrglemail.txt
+build/rglemail/xref-rglemail.html
+dist/rglemail.exe
+rglemail.spec
