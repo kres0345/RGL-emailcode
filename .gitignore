@@ -10,3 +10,5 @@ build/rglemail/warnrglemail.txt
 build/rglemail/xref-rglemail.html
 dist/rglemail.exe
 rglemail.spec
+dist/Email.txt
+dist/error.txt
