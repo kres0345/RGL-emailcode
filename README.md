@@ -1,3 +1,6 @@
+## NOTICE:
+Project has been ceased becouse the renegade-line forum doesn't allow this program. Feel free to use it anyways. If you want me to continue this project make an [Issue](https://github.com/kres0345/RGL-emailcode/issues) about it. Then I will continue the project.
+
 # RGL-Emailcode
 RGL-emailcode is a program I created to simplify and make the process of retrieving the one time key from email, in renegadeline.com faster.
 
