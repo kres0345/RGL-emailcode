@@ -26,6 +26,7 @@ the comments explain what the different functions does. You can also just ask me
 ### When you scan the program with your anti-virus
 - Read the "False positive error" section of the page https://en.wikipedia.org/wiki/False_positives_and_false_negatives#False_positive_error
 - Link to NoDistribute: https://NoDistribute.com/result/Cz3Xd2M9pgTQtn5rmUVKyIOjY
+- Link to VirusTotal: https://www.virustotal.com/#/file/69117bac513bb2d47536523fdc2d9ffee78771fd4cbc08826bddeae745af5933/detection
 - Notice: The popular anti-viruses like: AVG, Malwarebytes Anti-Malware, Norton Antivirus, Avast and more. Doesn't detect any viruses.
 - Reason some detect it as a virus is becouse it reads your Emails. Which some viruses tend to do.
-- List of antiviruses that doesn't detect ti as a virus: https://pastebin.com/ARAPB8Hr
+- List of antiviruses that doesn't detect it as a virus: https://pastebin.com/ARAPB8Hr
