@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import imaplib, smtplib, getpass, os
 variable1 = 0
 if os.path.exists("error.txt"):
